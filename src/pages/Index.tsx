@@ -10,6 +10,10 @@ import { EquipmentModule } from "@/components/EquipmentModule";
 import { EmployeesModule } from "@/components/EmployeesModule";
 import { ComplianceModule } from "@/components/ComplianceModule";
 import { FinanceModule } from "@/components/FinanceModule";
+import { EstimatesModule } from "@/components/EstimatesModule";
+import { SchedulingModule } from "@/components/SchedulingModule";
+import { QualityControlModule } from "@/components/QualityControlModule";
+import { MaterialsModule } from "@/components/MaterialsModule";
 
 const Index = () => {
   const [activeModule, setActiveModule] = useState("dashboard");
@@ -33,6 +37,14 @@ const Index = () => {
         return <ComplianceModule />;
       case "finance":
         return <FinanceModule />;
+      case "estimates":
+        return <EstimatesModule />;
+      case "scheduling":
+        return <SchedulingModule />;
+      case "quality":
+        return <QualityControlModule />;
+      case "materials":
+        return <MaterialsModule />;
       default:
         return <Dashboard />;
     }
