@@ -41,7 +41,8 @@ import {
   CreditCard,
   Archive,
   Coffee,
-  Car
+  Car,
+  TrendingUp
 } from "lucide-react";
 
 interface SidebarProps {
